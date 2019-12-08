@@ -40,3 +40,36 @@ button{
     display: inline-block;
     margin: 2px;
 }
+
+.namer{
+    display: inline-block;
+    font-family: cursive;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.viewer{
+    display: inline-block;
+    width: 211px;
+    height: 150px;
+    border: 1px solid black;
+    padding: 5px;
+}
+button{
+    margin-top: 30px;
+    margin-left: 400px;
+}
+.main{
+    margin-left: 450px;
+}
+.output{
+    width: 800px;
+    margin-left: 700px;
+}
+ .rel{
+     width: 700px;
+    margin-left: 350px;
+    margin-bottom: 40px;
+}
+body{
+    background-color: cyan;
+}

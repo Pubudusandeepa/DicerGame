@@ -1,19 +1,40 @@
 const button = document.querySelector("button");
 
 const output = document.querySelector("#output");
+const player1 =document.querySelector("#player1");
+const player2 =document.querySelector("#player2");
 const dice = [[5],[1,9],[1,5,9],[1,3,7,9],[1,3,5,7,9],[1,3,4,6,7,9]];
 
 button.addEventListener("click", function(){
-    let rollDice = roll(6);
-    let holder = builder(rollDice);
-    if(output.children[0])
-    { 
-        output.children[0].remove();
+    let rolls = [roll(6),roll(6)];
+    let temp;
+    if(rolls[0] == rolls[1])
+    {
+        temp = "Draw";
+    }  
+    else if(rolls[0] > rolls[1])
+    {
+        temp ="Player 1 wins";
     }
-   
-    output.appendChild(holder);
+    else{
+        temp ="Player 2 Win";
+    }
+    updateOutput(player1, rolls[0]);
+    updateOutput(player2, rolls[1]);
+    output.innerHTML = temp;
+
 
 })
+
+function updateOutput(el,num){
+    let holder = builder(num);
+    if(el.children[0])
+    { 
+        el.children[0].remove();
+    }
+   
+    el.appendChild(holder);
+}
 
 function builder(num){
 let div  = document.createElement("div");
