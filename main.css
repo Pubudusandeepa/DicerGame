@@ -1,0 +1,42 @@
+/* #player1,#player2{
+    display: inline-block;
+    width: 200px;
+    height: 140px;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 25px;
+    text-align: center;
+    font-size: 7em;
+} */
+
+#output{
+    width: 550px;
+    text-align: center;
+    font-size: 2em;
+}
+button{
+    padding: 10px;
+    text-align: center;
+    width: 550px;
+}
+.dicer{
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    padding: 2px;
+    border-radius: 10px;
+}
+.black{
+    background-color: black;
+}
+.white{
+    background-color: white;
+}
+
+.dot{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 2px;
+}
